@@ -1,0 +1,314 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main .cuerpoPrincipal .col img {
+  width: 100%;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  position: relative;
+}
+
+main .cuerpoPrincipal .col img:hover {
+  -webkit-transform: scale(1. 15);
+          transform: scale(1. 15);
+}
+
+
+
+
+
+
+
+#header{
+  grid-area: header;
+}
+
+#cuerpoindex{
+  grid-area: cuerpo;
+}
+
+#pie{
+  grid-area: pie;
+}
+
+/*portada*/
+.portada{
+  grid-area: portada;
+  display: flex;
+  justify-content: center;
+  background-image: radial-gradient(rgb(120, 120, 209) , rgb(0, 2, 143));
+} 
+
+
+#carouselExampleIndicators{
+  margin-top: 80px;
+}
+
+/*encabezado*/
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  position: sticky;
+}
+
+
+ /*cuerpo index*/
+
+.col{
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+main{
+  text-align: center;
+  grid-column: 1/4;
+}
+
+#cuerpoIndex{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  justify-items: center;
+}
+
+.col h2{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  color: rgb(18, 21, 155);
+}
+
+
+@media screen and (min-width:768px) {
+  main #cuerpoIndex{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      justify-items: center;
+  }
+}
+
+/* celulares */
+
+@media screen and (max-width:767px) {
+  main #cuerpoIndex{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center
+  }
+  header .menu ul{
+      font-size: 10px;
+  }
+}
+
+/* pantalla de escritorio */
+
+@media screen and (min-width:1024px) {
+  main #cuerpoIndex{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+      justify-items: center;
+  }
+}
+
+
+h1{
+  margin: auto;
+  background-color: blue;
+  width: 600px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+
+.fondoDeParrafo{
+  background-image: url(../MzULTIMEDIA/sublimados.jpg);
+
+}
+
+
+.textoParrafo{
+  width: 300px;
+  height: 300px;
+  overflow: scroll;
+  text-align: center;
+  margin: 70px auto;
+  border: 5px rgb(49, 156, 218) solid ;
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafoNosotros{
+  font-family: 'Comfortaa', cursive;
+  color: blue;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagenDeFondoNosotros{
+  background-image: url(../MULTIMEDIA/imagen\ de\ sublimacion.jpg);
+  background-position: center;
+
+}
+
+
+
+
+.parrafoDos{
+  width: 300px;
+  height: 450px;
+  margin: 50px;
+  border: 2px black solid;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  color: rgb(35, 153, 231);
+  font-size: 24px;
+  font-weight: 100px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 800px;
+  bottom: 300px;
+}
+
+main section div iframe{
+  position: relative;
+  top: 150px;
+}
+
+/*sublimados*/
+
+.tituloNosotros{
+  margin: 0 auto;
+  width: 1350px;
+  border: 5px black solid;
+  background-color: blue;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+/*contactos*/
+
+.formulario{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*insumos*/
+
+.vinilos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.impresora{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tazas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.videoyoutube{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+}
+
+footer .menu ul{
+  list-style: none;
+}
+
+footer .menu ul li {
+  display: block;
+}
+
+
+footer nav ul li a:hover {
+  background-color: rgb(13, 134, 9);
+  color: white;
+  padding: 4px;
+}
+
+footer .menu ul li a{
+  position: relative;
+  top: 40px;
+  text-decoration: none;
+  background: blue;
+  color: white;
+}
+  
+
+footer .menu ul li{
+  display: inline;
+  position: relative;
+}
+
+li.open-submenu:hover ul.submenu{
+  display: block;
+  left: 1px;
+  background: rgb(68, 131, 5);
+  color: white;
+  top: 20px;
+  width: 10px;
+  height: 5px;
+
+}
+
+
+.submenu ul li a:hover{
+  background-color: rgb(0, 0, 0);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  color: white;
+  background: blue;
+  
+}
+
+div footer p{
+  margin-top: 40px;
+}
